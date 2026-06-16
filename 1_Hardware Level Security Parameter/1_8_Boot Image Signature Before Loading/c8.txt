@@ -1,0 +1,2 @@
+this firmware did not have "smtp , ftp, snmp " app.
+dns, dhcp is not need   the digital signature 

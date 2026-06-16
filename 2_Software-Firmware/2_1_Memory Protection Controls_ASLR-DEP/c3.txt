@@ -1,0 +1,9 @@
+ASLR level:
+cat /proc/sys/kernel/randomize_va_space  
+valu：2
+
+ NX/DEP:
+gcc -z noexecstack 
+
+open NX :
+gcc -fstack-protector 

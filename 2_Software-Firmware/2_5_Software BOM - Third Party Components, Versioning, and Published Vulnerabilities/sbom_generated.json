@@ -1,0 +1,198 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.4",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2025-04-03T02:42:39Z",
+        "tools": [
+            {
+                "vendor": "MyCompany",
+                "name": "SBOM Generator",
+                "version": "1.0"
+            }
+        ],
+        "component": {
+            "type": "device",
+            "name": "CPPLUS-IPC",
+            "version": "1.0.0",
+        }
+    },
+    "components": [
+        {
+            "type": "library",
+            "name": "linux_kernel",
+            "version": "4.19.91",
+            "description": "Linux Kernel and other utilities",
+            "purl": "pkg:lib/linux_kernel@4.19.91",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPLv2"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "appweb",
+            "version": "7.2.0",
+            "description": "HTTP Web Server",
+            "purl": "pkg:lib/appweb@7.2.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPLv2"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "goahead",
+            "version": "4.1.1",
+            "description": "Embedded Web Server",
+            "purl": "pkg:lib/goahead@4.1.1",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPL"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "libjpeg-turbo",
+            "version": "1.2.90",
+            "description": "JPEG image codec",
+            "purl": "pkg:lib/libjpeg-turbo@1.2.90",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPLV2"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "lua",
+            "version": "5.0.3",
+            "description": "Scripting Language",
+            "purl": "pkg:lib/lua@5.0.3",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "lwIP",
+            "version": "2.1.2",
+            "description": "TCP-IP protocol stack",
+            "purl": "pkg:lib/lwIP@2.1.2",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "BSD"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "mbed TLS",
+            "version": "2.16.0",
+            "description": "Encryption Library",
+            "purl": "pkg:lib/mbed TLS@2.16.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "GPLv2"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "OpenSSL",
+            "version": "1.1.1w",
+            "description": "Provides encryption and secure communications",
+            "purl": "pkg:lib/OpenSSL@1.1.1w",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "MIT & GPL"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "FreeType",
+            "version": "2.11.0",
+            "description": "Handling font files and rendering fonts",
+            "purl": "pkg:lib/FreeType@2.11.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "FreeType License & GPL"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "ZBar",
+            "version": "0.1.0",
+            "description": "QR code scanning",
+            "purl": "pkg:lib/ZBar@0.1.0",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "LGPL-2.1"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "library",
+            "name": "zlib",
+            "version": "1.2.3",
+            "description": "Data Compression",
+            "purl": "pkg:lib/zlib@1.2.3",
+            "licenses": [
+                {
+                    "license": {
+                        "id": "zlib License"
+                    }
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "pkg:device/my_embedded_device@1.0.0",
+            "dependsOn": [
+                "pkg:lib/linux_kernel@4.19.91",
+                "pkg:lib/appweb@7.2.0",
+                "pkg:lib/goahead@4.1.1",
+                "pkg:lib/libjpeg-turbo@1.2.90",
+                "pkg:lib/lua@5.0.3",
+                "pkg:lib/lwIP@2.1.2",
+                "pkg:lib/mbed TLS@2.16.0",
+                "pkg:lib/OpenSSL@1.1.1w",
+                "pkg:lib/FreeType@2.11.0",
+                "pkg:lib/ZBar@0.1.0",
+                "pkg:lib/zlib@1.2.3",
+                "pkg:lib/nan@nan",
+                "pkg:lib/nan@nan",
+                "pkg:lib/nan@nan",
+                "pkg:lib/nan@nan"
+            ]
+        }
+    ]
+}
